@@ -1,4 +1,5 @@
 {
+  "homepage": "https://paulobrun0.github.io/tipCalculatorApp",
   "name": "tipcalculatorapp",
   "private": true,
   "version": "0.0.0",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.0.9",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
