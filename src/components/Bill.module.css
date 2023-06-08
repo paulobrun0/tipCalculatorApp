@@ -24,7 +24,7 @@
     position: absolute;
     top: 53%;
     left: 1.1875rem;
-    /* transform: translateY(-20%); */
+
 }
 
 input[type="number"]::-webkit-outer-spin-button,

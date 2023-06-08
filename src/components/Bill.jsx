@@ -12,23 +12,21 @@ export const Bill = () => {
           <CurrencyDollar size={24} />
           <input className={styles.input} type="number" placeholder="0" />
         </label>
-        <label className={styles.label}>
-          Select
-          <ul>
-            {tipsButton.map((tipsButton) => (
-              <li className={styles.list} key={tipsButton}>
-                <ButtonTip tipLabel={tipsButton} />
-              </li>
-            ))}
-            <li className={styles.list}>
-              <input
-                className={styles.inputBill}
-                type="number"
-                placeholder="Custom"
-              />
+        <label className={styles.label}>Select Tip %</label>
+        <ul>
+          {tipsButton.map((tipsButton) => (
+            <li className={styles.list} key={tipsButton}>
+              <ButtonTip tipLabel={tipsButton} />
             </li>
-          </ul>
-        </label>
+          ))}
+          <li className={styles.list}>
+            <input
+              className={styles.inputBill}
+              type="number"
+              placeholder="Custom"
+            />
+          </li>
+        </ul>
 
         <label className={styles.label}>
           Number of People
