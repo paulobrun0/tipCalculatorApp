@@ -16,3 +16,7 @@
     background: #9FE8DF;
     color: var(--Very-dark-cyan);
 }
+
+.btnTip:active {
+    background: #26C2AE;
+}

@@ -1,0 +1,73 @@
+.containerBillResult {
+    border-radius: .9375rem;
+    background: var(--Very-dark-cyan);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 2.5rem 0 2.5rem;
+}
+
+.tipAmount,
+.totalPerPerson {
+    display: flex;
+    align-items: center;
+    gap: 92px;
+}
+
+.tipAmount {
+    margin-bottom: 1.5625rem;
+}
+
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    min-width: 6.125rem;
+}
+
+.description p {
+    display: flex;
+    color: var(--White);
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.description span {
+    color: var(--White);
+    font-size: .8125rem;
+    line-height: 19px;
+    color: #7F9D9F;
+    display: block;
+}
+
+.billPerPerson p,
+.billTotalPerPerson p {
+    color: #26C2AE;
+    font-size: 48px;
+    line-height: 4.4375rem;
+}
+
+.btnReset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 112px;
+}
+
+button {
+    background: #26C2AE;
+    color: var(--Very-dark-cyan);
+    border: none;
+    padding: 6px 36px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    max-width: 20.8125rem;
+    transition: .5s;
+    border-radius: 5px;
+    flex: 1;
+}
+
+button:hover {
+    background: #9FE8DF;
+}

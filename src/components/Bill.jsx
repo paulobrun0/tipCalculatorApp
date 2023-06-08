@@ -1,6 +1,7 @@
 import { CurrencyDollar, User } from '@phosphor-icons/react'
 import styles from './Bill.module.css'
 import { ButtonTip } from './ButtonTip'
+import { BillResult } from './BillResult'
 export const Bill = () => {
   const tipsButton = [5, 10, 15, 25, 50]
 
@@ -12,21 +13,23 @@ export const Bill = () => {
           <CurrencyDollar size={24} />
           <input className={styles.input} type="number" placeholder="0" />
         </label>
-        <label className={styles.label}>Select Tip %</label>
-        <ul>
-          {tipsButton.map((tipsButton) => (
-            <li className={styles.list} key={tipsButton}>
-              <ButtonTip tipLabel={tipsButton} />
+        <div className={styles.containerTips}>
+          <label className={styles.label}>Select Tip %</label>
+          <ul>
+            {tipsButton.map((tipsButton) => (
+              <li className={styles.list} key={tipsButton}>
+                <ButtonTip tipLabel={tipsButton} />
+              </li>
+            ))}
+            <li className={styles.list}>
+              <input
+                className={styles.inputBill}
+                type="number"
+                placeholder="Custom"
+              />
             </li>
-          ))}
-          <li className={styles.list}>
-            <input
-              className={styles.inputBill}
-              type="number"
-              placeholder="Custom"
-            />
-          </li>
-        </ul>
+          </ul>
+        </div>
 
         <label className={styles.label}>
           Number of People
@@ -34,6 +37,7 @@ export const Bill = () => {
           <input className={styles.input} type="number" placeholder="0" />
         </label>
       </form>
+      <BillResult />
     </div>
   )
 }

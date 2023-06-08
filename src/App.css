@@ -8,6 +8,7 @@
 .container {
     background: var(--White);
     border-radius: 1.5625rem;
-    box-shadow: 0 32 43 0 hsla(185, 38%, 50%, 0.2);
+    box-shadow: 0 32px 43px 0 hsla(185, 38%, 50%, 0.2);
     padding: 32px;
+    max-width: 57.5rem;
 }
