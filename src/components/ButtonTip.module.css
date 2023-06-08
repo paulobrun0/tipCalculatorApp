@@ -1,0 +1,18 @@
+.btnTip {
+    border: none;
+    color: var(--White);
+    background: var(--Very-dark-cyan);
+    padding: 6px 36px;
+    cursor: pointer;
+    font-size: 24px;
+    max-width: 7.375rem;
+    transition: .5s;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.btnTip:hover {
+    border-radius: 5px;
+    background: #9FE8DF;
+    color: var(--Very-dark-cyan);
+}

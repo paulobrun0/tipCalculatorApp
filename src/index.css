@@ -16,7 +16,18 @@
 }
 
 body {
-  font-family: 'Space Mono', monospace;
   background: var(--Light-grayish-cyan);
   font-weight: 700;
+
+}
+
+body,
+input,
+label,
+button {
+  font-family: 'Space Mono', monospace;
+}
+
+ul {
+  list-style: none;
 }
