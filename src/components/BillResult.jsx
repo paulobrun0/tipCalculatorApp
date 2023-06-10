@@ -1,6 +1,17 @@
+/* eslint-disable react/prop-types */
 import styles from './BillResult.module.css'
 
-export const BillResult = () => {
+export const BillResult = ({
+  tipAmountPerPerson,
+  totalPersonBill,
+  resetBtn,
+}) => {
+  const formattedTipAmount = tipAmountPerPerson
+    ? tipAmountPerPerson.toFixed(2)
+    : '0.00'
+  const formattedTotalBill = totalPersonBill
+    ? totalPersonBill.toFixed(2)
+    : '0.00'
   return (
     <div className={styles.containerBillResult}>
       <div className={styles.tipAmount}>
@@ -9,7 +20,7 @@ export const BillResult = () => {
           <span>/ person</span>
         </div>
         <div className={styles.billPerPerson}>
-          <p>$0.00</p>
+          <p>${formattedTipAmount}</p>
         </div>
       </div>
       <div className={styles.totalPerPerson}>
@@ -18,11 +29,11 @@ export const BillResult = () => {
           <span>/ person</span>
         </div>
         <div className={styles.billTotalPerPerson}>
-          <p>$0.00</p>
+          <p>${formattedTotalBill}</p>
         </div>
       </div>
       <div className={styles.btnReset}>
-        <button>Reset</button>
+        <button onClick={resetBtn}>Reset</button>
       </div>
     </div>
   )
