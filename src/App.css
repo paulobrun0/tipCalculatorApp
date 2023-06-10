@@ -11,3 +11,10 @@
     box-shadow: 0 32px 43px 0 hsla(185, 38%, 50%, 0.2);
     padding: 32px;
 }
+
+@media (max-width: 768px) {
+    .App {
+        height: auto;
+        margin: 50%;
+    }
+}
