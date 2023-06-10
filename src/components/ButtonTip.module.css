@@ -5,7 +5,7 @@
     padding: 6px 36px;
     cursor: pointer;
     font-size: 24px;
-    max-width: 7.375rem;
+    width: 100%;
     transition: .5s;
     border-radius: 5px;
     flex: 1;
@@ -17,6 +17,10 @@
     color: var(--Very-dark-cyan);
 }
 
-.btnTip:active {
-    background: #26C2AE;
+
+
+@media (max-width: 768px) {
+    .btnTip:hover {
+        background: #26C2AE;
+    }
 }
