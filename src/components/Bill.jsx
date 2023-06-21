@@ -4,8 +4,8 @@ import { ButtonTip } from './ButtonTip'
 import { BillResult } from './BillResult'
 import { useState } from 'react'
 export const Bill = () => {
-  const [billInput, setBillInput] = useState(100)
-  const [totalPersonInput, setTotalPersonInput] = useState(2)
+  const [billInput, setBillInput] = useState('')
+  const [totalPersonInput, setTotalPersonInput] = useState('')
   const [customTip, setCustomTip] = useState('')
   const [tipAmountPerPerson, setTipAmountPerPerson] = useState(0.0)
   const [totalPersonBill, setTotalPersonBill] = useState(0.0)
@@ -66,7 +66,6 @@ export const Bill = () => {
 
   const handleCustomTip = (e) => {
     setCustomTip(e.target.value)
-    console.log(e.target.value)
   }
 
   return (
